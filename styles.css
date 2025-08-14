@@ -27,12 +27,24 @@ button {
   margin: 10px;
   font-size: 1rem;
   cursor: pointer;
-  background-color: #007bff;
   border: none;
   border-radius: 5px;
   color: white;
 }
 
 button:hover {
-  background-color: #0056b3;
+  opacity: 0.9;
+}
+
+/* Individual button colors */
+#buy12-btn {
+  background-color: #28a745; /* green */
+}
+
+#buy15-btn {
+  background-color: #ff9800; /* orange */
+}
+
+#return-home-btn {
+  background-color: #6c757d; /* gray */
 }

@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KDG6XQTH');</script>
-<!-- End Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KDG6XQTH');
+  </script>
+  <!-- End Google Tag Manager -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NextUpAdvertising</title>
@@ -20,13 +27,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <main id="home">
     <p>At NextUpAdvertising, we take businesses to the next level through targeted advertising.</p>
-    <button onclick="purchase('$12')">Buy for $12</button>
-    <button onclick="purchase('$15')">Buy for $15</button>
+    <button id="buy12-btn" onclick="purchase('$12')">Buy for $12</button>
+    <button id="buy15-btn" onclick="purchase('$15')">Buy for $15</button>
   </main>
 
   <main id="thanks" style="display: none;">
     <h2 id="thanks-message">Thanks for purchasing!</h2>
-    <button onclick="returnHome()">Return Home</button>
+    <button id="return-home-btn" onclick="returnHome()">Return Home</button>
   </main>
 
   <script src="script.js"></script>
